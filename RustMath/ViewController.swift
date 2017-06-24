@@ -10,15 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    var category = ""
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func buttonA(_ sender: Any) {
+        category = "buildItems"
+        self.performSegue(withIdentifier: "segue", sender: self)
     }
+        
+        
+    @IBAction func buttonB(_ sender: Any) {
+        category = "buildBlocks"
+        self.performSegue(withIdentifier: "segue", sender: self)
+    }
+      
+        
+        
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+        }
+        
+        
+        override func didReceiveMemoryWarning() {
+            
+        }
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+        {
+            if segue.identifier == "segue" {
+                let vc = segue.destination as! TableViewController
+                //assuming that we created a variable called sentCategory in the TableViewController
+                vc.sentCategory = category
+            }
+        }
 
 
 }
