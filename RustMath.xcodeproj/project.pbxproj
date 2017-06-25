@@ -18,6 +18,7 @@
 		29D459311EFF1E3B00EB9DBE /* BuildingClassFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459301EFF1E3B00EB9DBE /* BuildingClassFile.swift */; };
 		29D459331EFF1E4A00EB9DBE /* WeaponClassFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459321EFF1E4A00EB9DBE /* WeaponClassFiles.swift */; };
 		29D459351EFF429200EB9DBE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459341EFF429200EB9DBE /* DetailsViewController.swift */; };
+		29D459371F00659200EB9DBE /* RoundButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459361F00659200EB9DBE /* RoundButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		29D459301EFF1E3B00EB9DBE /* BuildingClassFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingClassFile.swift; sourceTree = "<group>"; };
 		29D459321EFF1E4A00EB9DBE /* WeaponClassFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponClassFiles.swift; sourceTree = "<group>"; };
 		29D459341EFF429200EB9DBE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		29D459361F00659200EB9DBE /* RoundButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				29D459321EFF1E4A00EB9DBE /* WeaponClassFiles.swift */,
 				29D459341EFF429200EB9DBE /* DetailsViewController.swift */,
 				29D459071EFF1D9200EB9DBE /* Assets.xcassets */,
+				29D459361F00659200EB9DBE /* RoundButtons.swift */,
 				29D459041EFF1D9200EB9DBE /* Main.storyboard */,
 				29D459091EFF1D9200EB9DBE /* LaunchScreen.storyboard */,
 				29D4590C1EFF1D9200EB9DBE /* Info.plist */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D459371F00659200EB9DBE /* RoundButtons.swift in Sources */,
 				29D459031EFF1D9200EB9DBE /* ViewController.swift in Sources */,
 				29D4592F1EFF1DFE00EB9DBE /* TableViewController.swift in Sources */,
 				29D459311EFF1E3B00EB9DBE /* BuildingClassFile.swift in Sources */,
@@ -532,6 +536,7 @@
 				29D459271EFF1D9300EB9DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29D459281EFF1D9300EB9DBE /* Build configuration list for PBXNativeTarget "RustMathTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +545,7 @@
 				29D4592A1EFF1D9300EB9DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29D4592B1EFF1D9300EB9DBE /* Build configuration list for PBXNativeTarget "RustMathUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +554,7 @@
 				29D4592D1EFF1D9300EB9DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,8 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var rustMathView: UIView!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
+    
+    
+    
     var category = ""
 
+    
     
     
     @IBAction func buttonA(_ sender: Any) {
@@ -26,17 +33,27 @@ class ViewController: UIViewController {
     }
       
         
+   
+            
+    
+    override func viewDidAppear(_ animated: Bool) {
         
-        
+            let alertController = UIAlertController(title:"Pardon the Mess.",
+                message: "This app is still being built from scratch. Things are broken, don't work, and are just plain ugly. I'm still learning and trying my best. Please have patience.",
+                preferredStyle: UIAlertControllerStyle.alert); alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                            present(alertController, animated: true,
+                completion: nil)
+    }
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             
-        }
-        
-        
-        override func didReceiveMemoryWarning() {
+            
             
         }
+        
+        
+    
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?)
         {
@@ -44,10 +61,11 @@ class ViewController: UIViewController {
                 let vc = segue.destination as! TableViewController
                 //assuming that we created a variable called sentCategory in the TableViewController
                 vc.sentCategory = category
-                
+             
+            
             }
         }
+        
 
 
 }
-
