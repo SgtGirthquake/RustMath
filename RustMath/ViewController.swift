@@ -44,6 +44,7 @@ class ViewController: UIViewController {
                 let vc = segue.destination as! TableViewController
                 //assuming that we created a variable called sentCategory in the TableViewController
                 vc.sentCategory = category
+                
             }
         }
 

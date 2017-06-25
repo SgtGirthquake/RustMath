@@ -14,7 +14,7 @@ class TableViewController: UITableViewController {
     
     var sentCategory = ""
     
-    let buildItems = ["A Floor Grill",
+    var buildItems = ["A Floor Grill",
                       "Armored Door",
                       "Armored Double Door",
                       "Barbed Wooden Barricade",
@@ -58,7 +58,7 @@ class TableViewController: UITableViewController {
     
     
     
-    let  constructionItems = ["Foundation",
+    var  constructionItems = ["Foundation",
                               "Triangle Foundation",
                               "Foundation Steps",
                               "Floor",
@@ -121,11 +121,29 @@ class TableViewController: UITableViewController {
     //MARK: User chosen cell - establish myIndex to ensure user chooses what's used.
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
-        
-        
-        
+ 
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue" {
+            let svc = segue.destination as! DetailsViewController
+            
+            let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow! as NSIndexPath
+            
+            svc.passedData = data[indexPath.row]    }
+    
+   /* override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segue" {
+            let svc = segue.destination as! DetailsViewController
+            
+            let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow! as NSIndexPath
+            
+            svc.passedData = data[indexPath.row]
+        }
+        }*/
+        }
 
 
 }
+
+
+

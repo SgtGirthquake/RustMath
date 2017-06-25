@@ -47,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="416.80000000000001" y="146.17691154422789"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Choose Wisely-->
         <scene sceneID="P9o-3a-tl6">
             <objects>
                 <tableViewController id="mHI-7f-8Lx" customClass="TableViewController" customModule="RustMath" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,12 +57,15 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="67" id="P1i-vf-nas">
-                                <rect key="frame" x="0.0" y="55.5" width="375" height="67"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="67"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P1i-vf-nas" id="cIS-Rh-UjN">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="oRe-Y5-woQ" kind="show" identifier="segue" id="cOi-hx-Rfy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -70,10 +73,47 @@
                             <outlet property="delegate" destination="mHI-7f-8Lx" id="ehu-zN-RhW"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Choose Wisely" id="JtF-xL-MWa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq1-X3-OQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1327.2" y="146.17691154422789"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="aaa-xC-4nZ">
+            <objects>
+                <viewController id="oRe-Y5-woQ" customClass="DetailsViewController" customModule="RustMath" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0gH-X0-hgO"/>
+                        <viewControllerLayoutGuide type="bottom" id="1D3-J9-hXx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ntj-cY-kff">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b3P-BF-g4A">
+                                <rect key="frame" x="16" y="72" width="201" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11W-vg-leL">
+                                <rect key="frame" x="225" y="72" width="134" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="nsa-RB-TrC"/>
+                    <connections>
+                        <outlet property="itemLabel" destination="11W-vg-leL" id="gof-Z2-Ge2"/>
+                        <outlet property="myImageView" destination="b3P-BF-g4A" id="nJc-zo-Qk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anT-G9-cLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1325.5999999999999" y="872.11394302848578"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SDU-Na-Pfy">
