@@ -8,10 +8,28 @@
 
 import UIKit
 
+
+
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var damageLabel: UILabel!
+    @IBOutlet weak var quantityLabel: UILabel!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var itemLabel: UILabel!
+    
     
   var passedData = ""
     
@@ -20,9 +38,6 @@ class DetailsViewController: UIViewController {
         
         
        
-        
-        
-    
     
         itemLabel.text = passedData
         myImageView.image = UIImage(named: passedData + ".png")
@@ -38,7 +53,12 @@ class DetailsViewController: UIViewController {
     }
     
 
-    /*
+    
+   
+    }
+ 
+    
+   /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -48,4 +68,4 @@ class DetailsViewController: UIViewController {
     }
     */
 
-}
+

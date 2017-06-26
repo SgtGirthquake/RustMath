@@ -36,6 +36,7 @@ class Rock:MeleeWeapons {
 
 class Hammer:Tools {
     var itemImage = "Hammer.png"
+  
 }
 
 
