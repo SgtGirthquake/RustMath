@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2962772F1F01D00E001A3D8F /* SpreadsheetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962772E1F01D00E001A3D8F /* SpreadsheetView.framework */; };
+		296277331F01E911001A3D8F /* data.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 296277321F01E911001A3D8F /* data.tsv */; };
+		296277391F01EF16001A3D8F /* SpreadsheetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2962772E1F01D00E001A3D8F /* SpreadsheetView.framework */; };
+		2962773D1F01EF1D001A3D8F /* SpreadsheetView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2962772E1F01D00E001A3D8F /* SpreadsheetView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		29D459011EFF1D9200EB9DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459001EFF1D9200EB9DBE /* AppDelegate.swift */; };
 		29D459031EFF1D9200EB9DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459021EFF1D9200EB9DBE /* ViewController.swift */; };
 		29D459061EFF1D9200EB9DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D459041EFF1D9200EB9DBE /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 		29D459331EFF1E4A00EB9DBE /* WeaponClassFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459321EFF1E4A00EB9DBE /* WeaponClassFiles.swift */; };
 		29D459351EFF429200EB9DBE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459341EFF429200EB9DBE /* DetailsViewController.swift */; };
 		29D459371F00659200EB9DBE /* RoundButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D459361F00659200EB9DBE /* RoundButtons.swift */; };
+		29D459421F01C07500EB9DBE /* ChameleonFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D459411F01C07500EB9DBE /* ChameleonFramework.framework */; };
+		29D459441F01C0C600EB9DBE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D459431F01C0C600EB9DBE /* QuartzCore.framework */; };
+		29D459461F01C0E500EB9DBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D459451F01C0E500EB9DBE /* CoreGraphics.framework */; };
+		29D459481F01C11A00EB9DBE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 29D459471F01C11A00EB9DBE /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +46,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2962773B1F01EF17001A3D8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2962773D1F01EF1D001A3D8F /* SpreadsheetView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0C26D6DE87F4171B2ABDEB0C /* Pods-RustMath.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RustMath.release.xcconfig"; path = "Pods/Target Support Files/Pods-RustMath/Pods-RustMath.release.xcconfig"; sourceTree = "<group>"; };
+		15E7224442095F5A4174A7D0 /* Pods_RustMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RustMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2962772E1F01D00E001A3D8F /* SpreadsheetView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpreadsheetView.framework; path = "../../Library/Developer/Xcode/DerivedData/RustMath-ffsirinkqodytqevcigfcimsznhs/Build/Products/Debug-iphoneos/SpreadsheetView/SpreadsheetView.framework"; sourceTree = "<group>"; };
+		296277321F01E911001A3D8F /* data.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.tsv; sourceTree = "<group>"; };
 		29D458FD1EFF1D9200EB9DBE /* RustMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RustMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D459001EFF1D9200EB9DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29D459021EFF1D9200EB9DBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +83,11 @@
 		29D459321EFF1E4A00EB9DBE /* WeaponClassFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponClassFiles.swift; sourceTree = "<group>"; };
 		29D459341EFF429200EB9DBE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		29D459361F00659200EB9DBE /* RoundButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtons.swift; sourceTree = "<group>"; };
+		29D459411F01C07500EB9DBE /* ChameleonFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ChameleonFramework.framework; path = "../../Library/Developer/Xcode/DerivedData/RustMath-ffsirinkqodytqevcigfcimsznhs/Build/Products/Debug-iphonesimulator/ChameleonFramework/ChameleonFramework.framework"; sourceTree = "<group>"; };
+		29D459431F01C0C600EB9DBE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29D459451F01C0E500EB9DBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29D459471F01C11A00EB9DBE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CAC9A65C59AE6C1D7B0B29AC /* Pods-RustMath.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RustMath.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RustMath/Pods-RustMath.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +95,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2962772F1F01D00E001A3D8F /* SpreadsheetView.framework in Frameworks */,
+				29D459461F01C0E500EB9DBE /* CoreGraphics.framework in Frameworks */,
+				296277391F01EF16001A3D8F /* SpreadsheetView.framework in Frameworks */,
+				29D459441F01C0C600EB9DBE /* QuartzCore.framework in Frameworks */,
+				29D459421F01C07500EB9DBE /* ChameleonFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +127,8 @@
 				29D459141EFF1D9300EB9DBE /* RustMathTests */,
 				29D4591F1EFF1D9300EB9DBE /* RustMathUITests */,
 				29D458FE1EFF1D9200EB9DBE /* Products */,
+				29D459401F01C07500EB9DBE /* Frameworks */,
+				5609CC726E41B80E9257F6A4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,10 +151,12 @@
 				29D459301EFF1E3B00EB9DBE /* BuildingClassFile.swift */,
 				29D459321EFF1E4A00EB9DBE /* WeaponClassFiles.swift */,
 				29D459341EFF429200EB9DBE /* DetailsViewController.swift */,
+				296277321F01E911001A3D8F /* data.tsv */,
 				29D459071EFF1D9200EB9DBE /* Assets.xcassets */,
 				29D459361F00659200EB9DBE /* RoundButtons.swift */,
 				29D459041EFF1D9200EB9DBE /* Main.storyboard */,
 				29D459091EFF1D9200EB9DBE /* LaunchScreen.storyboard */,
+				29D459471F01C11A00EB9DBE /* Podfile */,
 				29D4590C1EFF1D9200EB9DBE /* Info.plist */,
 			);
 			path = RustMath;
@@ -140,6 +180,27 @@
 			path = RustMathUITests;
 			sourceTree = "<group>";
 		};
+		29D459401F01C07500EB9DBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2962772E1F01D00E001A3D8F /* SpreadsheetView.framework */,
+				29D459451F01C0E500EB9DBE /* CoreGraphics.framework */,
+				29D459431F01C0C600EB9DBE /* QuartzCore.framework */,
+				29D459411F01C07500EB9DBE /* ChameleonFramework.framework */,
+				15E7224442095F5A4174A7D0 /* Pods_RustMath.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5609CC726E41B80E9257F6A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9A65C59AE6C1D7B0B29AC /* Pods-RustMath.debug.xcconfig */,
+				0C26D6DE87F4171B2ABDEB0C /* Pods-RustMath.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +208,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29D459251EFF1D9300EB9DBE /* Build configuration list for PBXNativeTarget "RustMath" */;
 			buildPhases = (
+				A49515CCD401CC01223722F5 /* [CP] Check Pods Manifest.lock */,
 				29D458F91EFF1D9200EB9DBE /* Sources */,
 				29D458FA1EFF1D9200EB9DBE /* Frameworks */,
 				29D458FB1EFF1D9200EB9DBE /* Resources */,
+				083CBE9DFB2E48272534E32A /* [CP] Embed Pods Frameworks */,
+				89993CE85AF46AD01874B0B7 /* [CP] Copy Pods Resources */,
+				2962773B1F01EF17001A3D8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +317,8 @@
 			files = (
 				29D4590B1EFF1D9200EB9DBE /* LaunchScreen.storyboard in Resources */,
 				29D459081EFF1D9200EB9DBE /* Assets.xcassets in Resources */,
+				29D459481F01C11A00EB9DBE /* Podfile in Resources */,
+				296277331F01E911001A3D8F /* data.tsv in Resources */,
 				29D459061EFF1D9200EB9DBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +338,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		083CBE9DFB2E48272534E32A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RustMath/Pods-RustMath-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89993CE85AF46AD01874B0B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RustMath/Pods-RustMath-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A49515CCD401CC01223722F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29D458F91EFF1D9200EB9DBE /* Sources */ = {
@@ -435,6 +550,7 @@
 		};
 		29D459261EFF1D9300EB9DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC9A65C59AE6C1D7B0B29AC /* Pods-RustMath.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9R8D6H7463;
@@ -443,11 +559,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tritonal.RustMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		29D459271EFF1D9300EB9DBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C26D6DE87F4171B2ABDEB0C /* Pods-RustMath.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9R8D6H7463;
@@ -456,6 +574,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tritonal.RustMath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

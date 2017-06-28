@@ -1,0 +1,31 @@
+PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - SpreadsheetView (0.7.2)
+
+DEPENDENCIES:
+  - ChameleonFramework/Swift (from `https://github.com/ViccAlexander/Chameleon.git`)
+  - SpreadsheetView (from `https://github.com/kishikawakatsumi/SpreadsheetView.git`)
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  SpreadsheetView:
+    :git: https://github.com/kishikawakatsumi/SpreadsheetView.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 6dd284bde21ea2e7f9fd89bc36f40df16e16369d
+    :git: https://github.com/ViccAlexander/Chameleon.git
+  SpreadsheetView:
+    :commit: 3b96e7602e20d1a08b5b85efc45f38c8341f47fe
+    :git: https://github.com/kishikawakatsumi/SpreadsheetView.git
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  SpreadsheetView: 09f4c88ad7280cfa019da41578877848662359dc
+
+PODFILE CHECKSUM: 56267b24df4b2a113a97bd9a168e6cdec51735c9
+
+COCOAPODS: 1.2.1
